@@ -13,8 +13,6 @@ from wtforms.validators import DataRequired, ValidationError, EqualTo, Optional
 from models import User, Task
 from flask import session
 from datetime import datetime
-from datetime import datetime
-import datetime as dt
 
 class RegistrationForm(FlaskForm):
     username = StringField("Usuário", validators=[DataRequired()])
